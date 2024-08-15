@@ -1,0 +1,14 @@
+npm 
+    npm install -g npm@latest - установка последней версии
+    npm install -g npm@`version_number' - установка заданной версии npm
+сборщик vite для react
+    npm create vite@latest my-vue-app -- --template react - установка в папку my-vue-app, если установка нужна в текущую папку то указать .
+    npm i - устанвока всех зависимостей из папки package.json, в данной папке можно менять номера версий для установки, убрать ^
+запуск проекта
+    npm run dev - dev из файла package.json, раздел "scripts": {"dev": "vite"}
+установка библиотеки qr code (найти в инете нужную библиотеку npm react qr code genaretion), обратить внимаение на количество скачиваний в неделю и дату последнего обновления
+    npm install qrcode.react - пример библиотеки 
+установка библиотеки qr scanner
+    npm install @yudiel/react-qr-scanner
+установка React Router
+    npm i react-router-dom

@@ -18,4 +18,5 @@ npm
     npm run preview
 для размещения проекта:
     - в появившимся файле vite.config.js добавить base: '/qr-code', qr-code - название проекта
-    - ищем в инете по запросу: vite github deploy, на сайт vitejs.dev --> GitHub Pages
+    - ищем в инете по запросу: vite github deploy, на сайт vitejs.dev --> GitHub Pages, 
+    - заходим в проект на github в settings --> pages, смотрим структуру папок для static.yml

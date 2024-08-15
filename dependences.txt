@@ -12,3 +12,10 @@ npm
     npm install @yudiel/react-qr-scanner
 установка React Router
     npm i react-router-dom
+построение проекта (для vite) - react в js, перед заливкой на сайт
+    npm run build
+запуск проекта
+    npm run preview
+для размещения проекта:
+    - в появившимся файле vite.config.js добавить base: '/qr-code', qr-code - название проекта
+    - ищем в инете по запросу: vite github deploy, на сайт vitejs.dev --> GitHub Pages

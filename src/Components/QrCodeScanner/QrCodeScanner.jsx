@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Scanner } from '@yudiel/react-qr-scanner';
+import { QrReader } from 'react-qr-reader';
 import styles from './qrCodeScanner.module.css';
 import { SCAN_DATA } from '../../constants';
 
@@ -26,11 +26,12 @@ export const QrCodeScanner = () => {
 
     return (
         <div className={styles.container}>
-            <Scanner 
-                // allowMultiple={true} // сканировать одно и тоже подряд
-                onScan={scanHandler} 
-                components={settings} 
-                styles={styleSettings} />
+            <QrReader
+             onResult={(result) => {
+                console.log('result', result);
+             }}
+             containerStyle={{width: '300px'}}
+             />
             <p className={styles.result}>{scanned}</p>    
         </div>
     )

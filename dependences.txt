@@ -7,7 +7,7 @@ npm
 запуск проекта
     npm run dev - dev из файла package.json, раздел "scripts": {"dev": "vite"}
 установка библиотеки qr code (найти в инете нужную библиотеку npm react qr code genaretion), обратить внимаение на количество скачиваний в неделю и дату последнего обновления
-    npm install qrcode.react - пример библиотеки 
+    npm install react-qr-reader@3.0.0-beta-1 --force - пример библиотеки 
 установка библиотеки qr scanner
     npm install @yudiel/react-qr-scanner
 установка React Router

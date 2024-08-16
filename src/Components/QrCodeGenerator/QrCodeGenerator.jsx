@@ -32,18 +32,19 @@ export const QrCodeGenerator = () => {
     return (
         <div className={styles.container}>
             <input 
+                className={styles.input}
                 type="text" 
                 value={value} 
-                placeholder='Введите текст...'
+                placeholder='Input your text...'
                 onChange={onChangeHandler} 
-                className='input'
+                
             />
             <button 
                 type="button" 
                 onClick={onClickHandler}
                 className={styles.button}
             >
-                    Сгенерировать QR code
+                    Create QRcode
             </button>
             {/* {isShowQRCode === true ? <QRCodeSVG value={value} /> : null}  или:*/}
             {/* {isShowQRCode ? <QRCodeSVG value={value} /> : null} или: */}

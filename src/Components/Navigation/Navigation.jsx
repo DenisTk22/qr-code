@@ -4,10 +4,10 @@ import styles from './Navigation.module.css';
 export const Navigation = () => {
     return (
         <nav className={styles.container}>
-            <Link to='/qr-code/generate'>Генерировать QR код</Link>
-            <Link to='/qr-code/scan'>Сканировать QR код</Link>
-            <Link to='/qr-code/generateHistory'>История генерирования</Link>
-            <Link to='/qr-code/scanHistory'>История сканирования</Link>
+            <Link className={styles.link} to='/qr-code/generate'>Create QRcode</Link>
+            <Link className={styles.link} to='/qr-code/scan'>Scan QRcode</Link>
+            <Link className={styles.link} to='/qr-code/generateHistory'>Created QRcode</Link>
+            <Link className={styles.link} to='/qr-code/scanHistory'>Scanned QRcode</Link>
         </nav>
     );
 };

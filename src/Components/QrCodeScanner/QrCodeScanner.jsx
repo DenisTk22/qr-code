@@ -22,7 +22,7 @@ export const QrCodeScanner = () => {
                 constraints={{ facingMode: 'environment'}} // переключение между камерами: user - вкл фронтальная камера
                 scanDelay={1000}
                 onResult={scanHandler}
-                // containerStyle={{width: '500px'}}
+                containerStyle={{width: '500px'}}
             />
             <p className={styles.result}>{scanned}</p>    
         </div>

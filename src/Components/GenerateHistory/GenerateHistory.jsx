@@ -1,5 +1,5 @@
 import { GENERATE_DATA } from '../../constants';
-import { QRCodeSVG } from 'qrcode.react';
+import { QrReader } from 'react-qr-reader';
 import styles from './GenerateHistory.module.css';
 
 export const GenerateHistory = () => {
@@ -9,7 +9,7 @@ export const GenerateHistory = () => {
         <div>
             {data.map((text) => (
                 <p className={styles.qrcode} key={text}>
-                    <QRCodeSVG value={text} size={70} />
+                    <QrReader value={text} size={70} />
                     {text}
                 </p>
             ))}
